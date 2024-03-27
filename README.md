@@ -1,30 +1,28 @@
-# React + TypeScript + Vite
+# Workout-site
+Этот проект представляет собой дипломную работу для колледжа, целью которого является реализация сайта программ тренировок с возможностью
+выбрать для себя интересующую программу тренировок
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Содержание
+- [Технологии](#технологии)
+- [Использование](#использование)
+- [Зачем вы разработали этот проект](#зачем-вы-разработали-этот-проект)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Технологии
+- [React](https://ru.legacy.reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-## Expanding the ESLint configuration
+## Использование
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Установите node_modules с помощью команды:
+```sh
+yarn
+```
+Выполните команду yarn dev. Это запустит Development сервер
+```sh
+yarn dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Зачем вы разработали этот проект?
+Проект предназначен в большей части для закрепления понимания алгоритма создания авторизации/регистрации на
+современных Frontend/Backend технологиях, таких как <b>ReactJS, NodeJS, TypeScript и Express</b>
