@@ -1,0 +1,18 @@
+.body {
+  display: flex;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+@media (max-width: 1024px) {
+  .body {
+    height: auto !important;
+    margin: 0 0 120px 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

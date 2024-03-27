@@ -79,6 +79,13 @@
 }
 
 @media (max-width: 1024px) {
+  .header.active {
+    &:before {
+      transition: 0.3s all;
+      background-color: #b0b0b0 !important;
+    }
+  }
+
   .burger {
     display: block !important;
     position: relative;

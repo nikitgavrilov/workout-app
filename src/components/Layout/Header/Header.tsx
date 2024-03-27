@@ -4,8 +4,17 @@ import styles from "./Header.module.scss";
 const Header: React.FC = () => {
   const [isBurgerActive, setIsBurgerActive] = React.useState(false);
 
+  React.useEffect(() => {
+    const body = document.body;
+    if (isBurgerActive) {
+      body.classList.add("lock");
+    } else {
+      body.classList.remove("lock");
+    }
+  }, [isBurgerActive]);
+
   return (
-    <header className={styles.header}>
+    <header className={isBurgerActive ? `${styles.header} ${styles.active}` : `${styles.header}`}>
       <div className={"container"}>
         <div className={styles.body}>
           <h2 className={styles.logo}>
@@ -25,12 +34,6 @@ const Header: React.FC = () => {
               <li className={styles.link}>Вакансии</li>
               <li className={styles.link}>
                 <button>начать бесплатно</button>
-              </li>
-              <li className={styles.link}>
-                <p>RU</p>
-              </li>
-              <li className={styles.link}>
-                <p>EN</p>
               </li>
             </ul>
           </nav>

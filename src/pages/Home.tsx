@@ -1,10 +1,13 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
+import Hero from "../components/Hero/Hero";
+import Programs from "../components/Programs/Programs";
 
 const HomePage: React.FC = () => {
   return (
     <Layout>
-      <h1>hello world</h1>
+      <Hero />
+      <Programs />
     </Layout>
   );
 };
