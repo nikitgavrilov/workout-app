@@ -116,6 +116,22 @@ main {
     align-items: center;
   }
 }
+
+.card__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.card__price {
+  font-size: 24px;
+  font-weight: 700;
+}
+.card__description {
+  max-width: 360px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
 @media (max-width: 767px) {
   .info-title {
     font-size: 28px !important;
@@ -124,5 +140,9 @@ main {
 @media (max-width: 479px) {
   .info-title {
     font-size: 24px !important;
+  }
+  .card__description {
+    font-size: 14px;
+    line-height: 1.2;
   }
 }

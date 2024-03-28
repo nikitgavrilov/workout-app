@@ -10,4 +10,69 @@
       padding: 0 0 70px 0;
     }
   }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0 0 15px 0;
+
+    .card {
+      border-radius: 10px;
+      min-width: 310px;
+      height: 300px;
+      position: relative;
+      padding: 15px;
+      cursor: pointer;
+      > * {
+        color: #fff;
+      }
+      .arrow {
+        width: 25px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+      }
+      .cardTitle {
+      }
+      .cardSubTitle {
+        font-size: 16px;
+        line-height: 1.4;
+        margin: 0 0 110px 0;
+      }
+      .price {
+      }
+      .description {
+      }
+    }
+  }
+  .individual {
+    max-width: 1170px;
+    min-height: 250px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+
+    > * {
+      color: #fff;
+    }
+  }
+  .individualPrice {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    .individualYear {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .individual {
+    display: block;
+  }
 }

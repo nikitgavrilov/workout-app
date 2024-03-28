@@ -18,7 +18,7 @@ const Header: React.FC = () => {
       <div className={"container"}>
         <div className={styles.body}>
           <h2 className={styles.logo}>
-            <img src="/public/sport-logo.svg" alt="sport-logo" />
+            <img src="images/icons/sport-logo.svg" alt="sport-logo" />
           </h2>
           <div
             onClick={() => setIsBurgerActive((prev) => !prev)}
