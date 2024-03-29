@@ -30,13 +30,13 @@ const CARDS = [
 
 const Programs: React.FC = () => {
   return (
-    <section className={styles.programs}>
+    <section className={styles.programs} id="programs">
       <div className={"container"}>
-        <div className={"info"}>
+        <div className={`${styles.billboard} info`}>
           <h2 className={"info-title"}>Нас уже 20.000 базовчан! Присоединяйся!</h2>
         </div>
         <div className={styles.body}>
-          <h2 className={styles.title}>Основные программы</h2>
+          <h2 className="title">Основные программы</h2>
           <div className={styles.cards}>
             {CARDS.map((card) => (
               <div className={styles.card} style={{ background: `url(${card.image}) 0 0/100% no-repeat` }}>

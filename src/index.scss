@@ -33,6 +33,7 @@ body {
   -webkit-text-size-adjust: 100%;
   font-family: "Roboto", sans-serif;
   background-color: #efefef;
+  min-height: 3000px;
 }
 body.lock {
   overflow: hidden;
@@ -99,8 +100,6 @@ main {
   align-items: center;
 
   .info-title {
-    transform: translateY(-70px);
-
     padding: 15px;
     text-align: center;
     border-radius: 15px;
@@ -115,6 +114,14 @@ main {
     justify-content: center;
     align-items: center;
   }
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.23;
+  padding: 0 0 70px 0;
 }
 
 .card__title {
