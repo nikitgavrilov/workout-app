@@ -39,7 +39,7 @@ const Programs: React.FC = () => {
           <h2 className="title">Основные программы</h2>
           <div className={styles.cards}>
             {CARDS.map((card) => (
-              <div className={styles.card} style={{ background: `url(${card.image}) 0 0/100% no-repeat` }}>
+              <div key={card.id} className={styles.card} style={{ background: `url(${card.image}) 0 0/100% no-repeat` }}>
                 <img src="images/icons/arrow-right.svg" alt="arrow" className={styles.arrow} />
                 <h3 className={"card__title"} style={{ marginBottom: 5 }}>
                   {card.title}
@@ -52,14 +52,17 @@ const Programs: React.FC = () => {
               </div>
             ))}
           </div>
-          <div className={styles.individual} style={{ background: "url(images/programs/individual.webp) right 0 no-repeat" }}>
+          <div
+            className={styles.individual}
+            style={{ background: "url(images/programs/individual.webp) right bottom 0 no-repeat" }}
+          >
             <div className={styles.individualInfo}>
               <h3 className={"card__title"} style={{ marginBottom: 20 }}>
                 Индивидуальный подход
               </h3>
               <p className={"card__description"}>
                 Получи максимальный пакет и тренируйся вместе с нами без ограничений. Ты получишь VIP доступы ко всем тренировкам,
-                чатам и общению со всей командой и 100% ганатию результата!
+                чатам и общению со всей командой и 100% гарантию результата!
               </p>
             </div>
             <div className={styles.individualPrice}>

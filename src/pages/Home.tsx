@@ -4,6 +4,8 @@ import Hero from "../components/Hero/Hero";
 import Programs from "../components/Programs/Programs";
 import Results from "../components/Results/Results";
 import WhoWe from "../components/WhoWe/WhoWe";
+import Welcome from "../components/Welcome/Welcome";
+import Doubts from "../components/Doubts/Doubts";
 
 const HomePage: React.FC = () => {
   return (
@@ -12,6 +14,8 @@ const HomePage: React.FC = () => {
       <Programs />
       <Results />
       <WhoWe />
+      <Welcome />
+      <Doubts />
     </Layout>
   );
 };

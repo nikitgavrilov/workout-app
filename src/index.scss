@@ -94,6 +94,8 @@ main {
 }
 
 // general
+
+// billboards
 .info {
   display: flex;
   justify-content: center;
@@ -115,13 +117,15 @@ main {
     align-items: center;
   }
 }
+// billboards
 
+// programs
 .title {
   font-size: 42px;
   font-weight: 700;
   text-align: center;
   line-height: 1.23;
-  padding: 0 0 70px 0;
+  padding: 0 0 45px 0;
 }
 
 .card__title {
@@ -138,18 +142,20 @@ main {
   font-weight: 300;
   line-height: 1.4;
 }
+// programs
 
-@media (max-width: 767px) {
-  .info-title {
-    font-size: 28px !important;
+// footer
+.list {
+  .list-title {
+    color: #424242;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 14px 0;
+    font-weight: 700;
+    font-size: 16px;
   }
-}
-@media (max-width: 479px) {
-  .info-title {
-    font-size: 24px !important;
-  }
-  .card__description {
-    font-size: 14px;
-    line-height: 1.2;
+  .item {
+    margin: 0 0 10px 0;
+    cursor: pointer;
   }
 }

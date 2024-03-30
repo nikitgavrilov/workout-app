@@ -53,7 +53,6 @@ const Header: React.FC = () => {
                   Кто мы?
                 </ScrollLink>
               </li>
-              <li className={styles.link}>Вакансии</li>
               <li className={styles.link}>
                 <button>начать бесплатно</button>
               </li>

@@ -4,7 +4,7 @@ import styles from "./WhoWe.module.scss";
 const WhoWe: React.FC = () => {
   return (
     <section id="whoWe">
-      <div className="container">
+      <div className={"container"}>
         <div className={styles.body}>
           <div className={styles.column}>
             <div className={styles.item}>

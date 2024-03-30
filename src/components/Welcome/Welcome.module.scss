@@ -1,0 +1,33 @@
+.welcome {
+  padding: 20px 0 40px 0;
+  margin: 0 0 40px 0;
+  background-color: #fff;
+
+  .body {
+    display: flex;
+    justify-content: center;
+    .video {
+      flex: 0 1 75%;
+      height: 400px;
+      iframe {
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .video {
+    flex: 0 1 75%;
+    height: 200px !important;
+    iframe {
+      border-radius: 8px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
