@@ -54,7 +54,7 @@ const Header: React.FC = () => {
                 </ScrollLink>
               </li>
               <li className={styles.link}>
-                <button>начать бесплатно</button>
+                <button>личный кабинет</button>
               </li>
             </ul>
           </nav>

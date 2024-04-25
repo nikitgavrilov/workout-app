@@ -5,6 +5,9 @@ const WhoWe: React.FC = () => {
   return (
     <section id="whoWe">
       <div className={"container"}>
+        <h2 className="title" style={{ marginTop: 25 }}>
+          Тренерский состав
+        </h2>
         <div className={styles.body}>
           <div className={styles.column}>
             <div className={styles.item}>

@@ -6,7 +6,7 @@ const CARDS = [
     id: 0,
     title: "WorkoutAthlete",
     subtitle: "Тренировки по воркауту",
-    price: 13,
+    price: 1300,
     description: "Здесь ты найдешь тренировки со своим весом",
     image: "images/programs/bg-1.webp",
   },
@@ -14,7 +14,7 @@ const CARDS = [
     id: 1,
     title: "StreetLiftingAthlete",
     subtitle: "Тренировки с весом на турниках и брусьях",
-    price: 18,
+    price: 1800,
     description: "Тренируйся с дополнительным весом вместе с чемпионом мира",
     image: "images/programs/bg-2.webp",
   },
@@ -22,7 +22,7 @@ const CARDS = [
     id: 2,
     title: "Мужской марафон",
     subtitle: "Тренировки в тренажерном зале",
-    price: 40,
+    price: 4000,
     description: "Построй идеальное телосложение вместе с тренером за 45 дней",
     image: "images/programs/bg-3.webp",
   },
@@ -46,7 +46,7 @@ const Programs: React.FC = () => {
                 </h3>
                 <h4 className={styles.cardSubTitle}>{card.subtitle}</h4>
                 <p className={"card__price"} style={{ marginBottom: 20 }}>
-                  {card.price.toLocaleString("en-US", { style: "currency", currency: "USD" })}
+                  {card.price.toLocaleString("ru-RU", { style: "currency", currency: "RUB" })}
                 </p>
                 <p className={"card__description"}>{card.description}</p>
               </div>
@@ -67,7 +67,7 @@ const Programs: React.FC = () => {
             </div>
             <div className={styles.individualPrice}>
               <p className={styles.individualYear}>доступ: 1 год</p>
-              <p className={"card__price"}>{(400).toLocaleString("en-US", { style: "currency", currency: "USD" })}</p>
+              <p className={"card__price"}>{(8000).toLocaleString("ru-RU", { style: "currency", currency: "RUB" })} </p>
             </div>
           </div>
         </div>

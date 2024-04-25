@@ -2,16 +2,16 @@ import React from "react";
 import styles from "./Results.module.scss";
 
 const beforeAfterRes = [
-  { id: 0, photo: "images/results/1.webp" },
-  { id: 1, photo: "images/results/2.webp" },
-  { id: 2, photo: "images/results/3.webp" },
-  { id: 3, photo: "images/results/4.webp" },
-  { id: 4, photo: "images/results/5.webp" },
-  { id: 5, photo: "images/results/6.webp" },
-  { id: 6, photo: "images/results/7.webp" },
-  { id: 7, photo: "images/results/8.webp" },
-  { id: 8, photo: "images/results/9.webp" },
-  { id: 9, photo: "images/results/10.webp" },
+  { id: 0, photo: "images/results/1.webp", review: "Отличная программа для занятий! Мне все понравилось." },
+  { id: 1, photo: "images/results/2.webp", review: "Отличная программа для занятий! Мне все понравилось." },
+  { id: 2, photo: "images/results/3.webp", review: "Отличная программа для занятий! Мне все понравилось." },
+  { id: 3, photo: "images/results/4.webp", review: "Отличная программа для занятий! Мне все понравилось." },
+  { id: 4, photo: "images/results/5.webp", review: "Отличная программа для занятий! Мне все понравилось." },
+  { id: 5, photo: "images/results/6.webp", review: "Отличная программа для занятий! Мне все понравилось." },
+  { id: 6, photo: "images/results/7.webp", review: "Отличная программа для занятий! Мне все понравилось." },
+  { id: 7, photo: "images/results/8.webp", review: "Отличная программа для занятий! Мне все понравилось." },
+  { id: 8, photo: "images/results/9.webp", review: "Отличная программа для занятий! Мне все понравилось." },
+  { id: 9, photo: "images/results/10.webp", review: "Отличная программа для занятий! Мне все понравилось." },
 ];
 
 const Results: React.FC = () => {
@@ -28,6 +28,7 @@ const Results: React.FC = () => {
                 <div className={styles.column} key={result.id}>
                   <div className={styles.item}>
                     <img src={result.photo} alt="before/after result" />
+                    <p className={styles.review}>{result.review}</p>
                   </div>
                 </div>
               );
@@ -36,6 +37,7 @@ const Results: React.FC = () => {
                 <div className={styles.column} key={result.id}>
                   <div className={styles.item}>
                     <img src={result.photo} alt="before/after result" />
+                    <p className={styles.review}>{result.review}</p>
                   </div>
                 </div>
               );
